@@ -1,0 +1,24 @@
+.Calculator{
+	width: 20rem;
+	height: 30rem;
+	position: relative;
+	left: 20%;
+	border: 2px solid green;
+}
+.head{
+	width: 19rem;
+	height: 3rem;
+	position: relative;
+	font-family: sans-serif;
+	color: white
+	background-color: blue;
+	text-align: center;
+}
+
+.input{
+	position: relative;
+	width: 15rem;
+	height: 5rem;
+	font-family: sans-serif;
+	text-align: right;
+}
