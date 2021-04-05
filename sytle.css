@@ -1,9 +1,13 @@
 .Calculator{
 	width: 20rem;
 	height: 30rem;
-	position: relative;
+	position: fixed;
 	left: 20%;
 	border: 2px solid green;
+}
+.head h3{
+	padding: 0;
+	margin:0;
 }
 .head{
 	width: 19rem;
@@ -16,9 +20,28 @@
 }
 
 .input{
-	position: relative;
-	width: 15rem;
-	height: 5rem;
+	position: fixed;
+	top: 3rem;
+	width: 20rem;
+	height: 6rem;
 	font-family: sans-serif;
 	text-align: right;
+	border: 1px solid green;
+}
+
+.button{
+	display: grid;
+	position: fixed;
+	top: 9rem;
+	width: 20rem;
+	height: 20.5rem;
+	border: 1px solid red;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.number{
+	display: inline-block;
+	width: 5rem;
+	height: 3.5rem;
+	border: 1px solid red;
 }
