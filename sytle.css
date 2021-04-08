@@ -31,12 +31,13 @@
 
 .button{
 	display: grid;
+	grid-gap: 3px;
 	position: fixed;
 	top: 9rem;
 	width: 20rem;
 	height: 20.5rem;
 	border: 1px solid red;
-	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-columns: 24% 24% 24% 24%;
 }
 
 .number{
@@ -44,4 +45,6 @@
 	width: 5rem;
 	height: 3.5rem;
 	border: 1px solid red;
+	border-radius: 10px;
+	text-align: center;
 }
