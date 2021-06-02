@@ -13,15 +13,67 @@ for(var i=0;i<buttons.length;i++)
 		switch(value)
 		{
 			case '+': operator = '+';
-					   operand1 = parseFloat(display.textContent);
-					   display.innerText += value;
+
+					  if(operand1!=null)
+					  {
+					  		var temp = parseFloat(display.textContent);
+					  		operand1 = eval(temp+operator+operand1);
+					  }
+					  else
+					  	   operand1 = parseFloat(display.textContent);
+					   display.innerText = "";
+					   break;
+			case '-': operator = '-';
+					  break;
+			case '*': operator = '*';
+					  if(operand1!=null)
+					  {
+					  		var temp = parseFloat(display.textContent);
+					  		operand1 = eval(temp+operator+operand1);
+					  }
+					  else
+					  	   operand1 = parseFloat(display.textContent);
+					   break;
+
+			case '%': operator = '%';
+					  if(operand1!=null)
+					  {
+					  		var temp = parseFloat(display.textContent);
+					  		operand1 = eval(temp+operator+operand1);
+					  }
+					  else
+					  	   operand1 = parseFloat(display.textContent);
+					   break;
+			case '/': operator = '/';
+					  if(operand1!=null)
+					  {
+					  		var temp = parseFloat(display.textContent);
+					  		operand1 = eval(temp+operator+operand1);
+					  }
+					  else
+					  	   operand1 = parseFloat(display.textContent);
 					   display.innerText = "";
 					   break;
 			case "=" : operand2 = parseFloat(display.textContent);
 					   var ans = eval(operand1+ operator+operand2);
 					   display.innerText=ans;
 					   break;
-			default: display.innerText += value;
+			case "AC" : operand1 = "";
+						operand2 = "";
+						operator = "";
+						display.innerText = "";
+						break;
+			case "+/-" :operand1 = parseFloat(display.textContent);
+						operand1 = eval("-1"+"*"+parseFloat(operand1));
+						console.log(operand1);
+						display.innerText = operand1;
+						break;
+			case "square" :operand1 = parseFloat(display.textContent);
+						   operand1 = Math.pow(operand1,2);
+						   console.log(operand1);
+						   display.innerText = operand1;
+						   break;
+			default:  display.innerText += value;
 
 		}
 	});
