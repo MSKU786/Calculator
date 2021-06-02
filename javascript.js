@@ -58,8 +58,8 @@ for(var i=0;i<buttons.length;i++)
 					   var ans = eval(operand1+ operator+operand2);
 					   display.innerText=ans;
 					   break;
-			case "AC" : operand1 = "";
-						operand2 = "";
+			case "AC" : operand1 = null;
+						operand2 = null;
 						operator = "";
 						display.innerText = "";
 						break;
