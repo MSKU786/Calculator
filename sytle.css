@@ -1,57 +1,71 @@
-.Calculator{
-	width: 20rem;
-	height: 30rem;
-	position: fixed;
-	left: 20%;
-	border: 2px solid green;
-}
-.head h3{
-	padding: 0;
-	margin:0;
-}
-.head{
-	width: 19rem;
-	height: 3rem;
-	position: relative;
-	font-family: sans-serif;
-	color: white
-	background-color: blue;
-	text-align: center;
+
+
+.Calculator {
+  width: 330px;
+  height: 550px;
+  display: flex;
+  border: 3px solid #66fcf1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 35%;
+  margin-top: 5%;
+  border-radius: 20px;
+  background-color: #1f2833;
 }
 
-.input{
-	position: fixed;
-	top: 3rem;
-	width: 19rem;
-	height: 6rem;
-	font-family: sans-serif;
-	text-align: right;
-	border-radius: 5%;
-	margin: 0rem 0.3rem;
-	border: 3px solid green;
+.head {
+  width: 19rem;
+  height: 3rem;
+  font-family: sans-serif;
+  color: #c5c6c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-.input>#display{
-	font-family: sans-serif;
-	font-size: 1rem;
-}
-.button{
-	display: grid;
-	grid-gap: 7px;
-	position: fixed;
-	top: 9.5rem;
-	width: 20rem;
-	height: 20.5rem;
-	grid-template-columns: 23% 23% 23% 23%;
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 3rem;
+  width: 95%;
+  height: 140px;
+  font-family: sans-serif;
+  text-align: right;
+  border-radius: 10px;
+  margin: 0rem 0.3rem;
+  background-color: #c5c6c7;
+  border: 3px solid #66fcf1;
 }
 
-.number{
-	display: inline-block;
-	width: 4.5rem;
-	height: 3.5rem;
-	border: 1px solid red;
-	border-radius: 10%;
-	font-family: sans-serif;
-	font-size: 20px;
-	text-align: center;
+.input > #display {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+.button {
+  display: grid;
+  grid-gap: 7px;
+  top: 9.5rem;
+  width: 100%;
+  height: 20.5rem;
+  grid-template-columns: 22% 22% 22% 22%;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.number {
+  display: inline-block;
+  width: 4.5rem;
+  height: 3.5rem;
+  border: 1px solid red;
+  background-color: #66fcf1;
+  border-radius: 10%;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
