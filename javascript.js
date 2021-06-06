@@ -79,6 +79,7 @@ for(var i=0;i<buttons.length;i++)
 					   break;
 			case "=" : operand2 = parseFloat(display.textContent);
 					   var ans = eval(operand1+ operator+operand2);
+					   operation.innerText="";
 					   prevDisplay.innerText = ans ;
 					   display.innerText=ans;
 					   break;
@@ -91,7 +92,8 @@ for(var i=0;i<buttons.length;i++)
 						break;
 			case "+/-" :operand1 = parseFloat(display.textContent);
 						operand1 = eval("-1"+"*"+parseFloat(operand1));
-						operation.innerText = "-"
+						if(operation.innerText="")
+							operation.innerText = "-"
 						console.log(operand1);
 						display.innerText = operand1;
 						break;
